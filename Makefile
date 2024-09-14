@@ -1,7 +1,7 @@
 SOURCE = $(file)
 OUTPUT = $(basename $(SOURCE))
 CC = gcc
-CFLAGS = -Wall -Wextra -Wpedantic -pthread
+CFLAGS = -Wall -Wextra -Wpedantic -pthread -std=gnu99
 
 .PHONY: all clean
 all: $(OUTPUT)

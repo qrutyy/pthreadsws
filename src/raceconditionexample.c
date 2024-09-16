@@ -8,6 +8,7 @@ void* routine() {
 	for (int i = 0; i < 10000000; i ++) {
 		mails++;
 	}
+	return NULL;
 }
 
 int main(int argc, char* argv[]) {

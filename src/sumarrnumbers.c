@@ -12,7 +12,7 @@ void* routine(void* arg) {
 		sum += primes[index + i];	
 	}
 	*(int*)arg = sum;
-	return arg;
+	return (void*)arg;
 }
 
 int main(int argc, char* argv[]) {
@@ -27,11 +27,11 @@ int main(int argc, char* argv[]) {
 	}
 	int global_sum = 0;
 	for (i = 0; i < 2; i ++) {
-		int* result;
+		void* result;
 		if (pthread_join(th[i], &result) != 0) {
 			perror("Failed to exit a thread\n");
 		}
-		global_sum += *result;
+		global_sum += *(int*)result;
 		free(result);
 	}
 	printf("Global sum: %d", global_sum);

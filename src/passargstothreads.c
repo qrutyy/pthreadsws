@@ -9,6 +9,7 @@ void* routine(void *arg) {
 	int index = *(int*)arg;
 	printf("%d ", primes[index]);
 	free(arg);
+	return NULL;
 }
 
 int main(int argc, char* argv[]) {

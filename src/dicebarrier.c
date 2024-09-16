@@ -23,6 +23,7 @@ void* rollDice(void* args) {
 		printf("(thread nr. %d rolled %d) I lost\n", index, dice_values[index]);
 	}
 	free(args);
+	return NULL;
 }
 
 int main(int argc, char* argv[]) {

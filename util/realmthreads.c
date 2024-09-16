@@ -11,7 +11,7 @@ void* roll_dice() {
 }
 
 int main(int argc, char* argv[]) {
-	int* res;
+	int* res = NULL;
 	int i = 0;
 	srand(time(NULL));
 	pthread_t th[4];
@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
 			perror("Thread creation failed\n");
 			return 1;
 		}
-		printf("Result: %d %p\n", *res, res);
+
 	}
 
 	for (i = 0; i < 4; i ++) {

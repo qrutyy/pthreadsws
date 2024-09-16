@@ -1,0 +1,22 @@
+name: Clang Lint
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Run Clang Linter
+    runs-on: ubuntu-latest
+
+    steps:
+     - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Clang and clang-tidy
+        run: sudo apt-get install -y clang clang-tidy
+
+      - name: Run clang-tidy
+        run: clang-tidy **/*.c --warnings-as-errors=* -- -std=gnu99
+
+

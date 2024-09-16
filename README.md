@@ -2,7 +2,7 @@
 
 Workshop to practice and gain confidence in Posix Threads. (`pthreads`)
 
-## Contents
+## Content
 
 1. [Matrix-vector multiplication](https://github.com/qrutyy/uthreadsworkshop/tree/main/mvmul)
 2. [Practice sources](https://github.com/qrutyy/uthreadsworkshop/tree/main/src)

@@ -51,6 +51,10 @@ The [*plots*](https://github.com/qrutyy/uthreadsworkshop/tree/main/matrixmul/plo
   - For larger matrices (e.g., `n = 10,000`), the use of more threads significantly improves performance up to a point. However, at higher thread counts (50+), performance gains are minimal or may even regress due to factors like thread management overhead.
   - These plots help identify the optimal number of threads for different matrix sizes, showing where parallelism is most effective.
 
+### Notes about setup
+
+As for setup was used simple compilation using GCC without any optimizations (see [Makefile](https://github.com/qrutyy/uthreadsworkshop/tree/main/Makefile)). Granularity of the multiplication operation is 'fine-grained' and equal (`matrixdim // threadnum`).
+
 ## Conclusion
 
 Analysing the plots we can note a pretty interesting behaviour. Execution time, at some point, stops being directly depended on the number of threads. 

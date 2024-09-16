@@ -1,4 +1,4 @@
-# Matrix Mutliplication
+# Matrix-Vector Mutliplication
 
 This project implements mutlithreaded mutliplication of matrix and vector-column. For computing, the simplest multiplication principle was used.
 

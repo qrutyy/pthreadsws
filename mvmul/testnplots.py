@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 import re
 
-program_path = './matrixmultiplication'
+program_path = './mvmultiplication'
 n_values = [100, 200, 500, 1000, 2000, 3000, 4000, 5000, 7500, 10000]
 threadnum_values = [1, 2, 4, 10, 25, 50]
 repetitions = 50  # Number of repetitions for each test

@@ -30,6 +30,7 @@ void* fuel_filling(void* arg) {
 		sleep(1);
 	}
 	printf("Current ammount after fuel filling: %d\n", fuel_amm);
+	return NULL;
 }
 
 void* car(void* arg) {
@@ -43,6 +44,7 @@ void* car(void* arg) {
 	fuel_amm -= 40;
 	pthread_mutex_unlock(&fuel_mutex);
 	printf("Fuel balance: %d\n\n", fuel_amm);
+	return NULL;
 }
 
 

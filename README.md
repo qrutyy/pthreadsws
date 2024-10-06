@@ -1,6 +1,6 @@
-# Unix Threads workshop
+# Pthreads Threads workshop
 
-Workshop to practice and gain confidence in POSIX threads. (`pthreads`)
+Workshop to practice and gain confidence in POSIX threads.
 
 ## Content
 
